@@ -8,13 +8,21 @@ using namespace std;
 	int main()
 	{
 		ifstream inFile;
+		
 		char inputFileName [  ] = "salin.txt";
 		ofstream outFile;
+		
 		char outputFileName [  ] = "salout.txt";
+		
 		const int MAX_CHAR_TO_READ = 100;
+		
 		char completeLineText [ MAX_CHAR_TO_READ ];
+		
 		char *tokenPtr;
+		
 		int salary = 0 , totalSalary = 0;
+		
+		
 		
 		inFile.open( inputFileName );
 		outFile.open ( outputFileName );
