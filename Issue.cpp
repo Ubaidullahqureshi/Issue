@@ -27,9 +27,13 @@ using namespace std;
 		inFile.open( inputFileName );
 		outFile.open ( outputFileName );
 		
-		if ( ! inFile ) {
+		if ( ! inFile ) 
+		{
+			
 			cout << "Can't Open input File Named " << inputFileName << '\n';
+			
 			exit ( 1 );
+	
 		}  
 		
 		if ( ! outFile ) {
