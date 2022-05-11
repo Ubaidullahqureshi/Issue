@@ -4,7 +4,9 @@
 #include<cstdlib>
 
 using namespace std;
-	int main(){
+
+	int main()
+	{
 		ifstream inFile;
 		char inputFileName [  ] = "salin.txt";
 		ofstream outFile;
