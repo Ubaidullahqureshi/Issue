@@ -37,21 +37,27 @@ using namespace std;
 		}  
 		
 		if ( ! outFile ) {
+			
 			cout << "Can't Open output File Named " << outputFileName << '\n';
+			
 			exit( 1 );
 		}
 		
-		while ( ! inFile.eof ( ) ) {
+		while ( ! inFile.eof ( ) ) 
+		{
 			inFile.getline( completeLineText , MAX_CHAR_TO_READ );
 			tokenPtr = strtok ( completeLineText , " " );
 			tokenPtr = strtok ( NULL , " " );
 			salary = atoi( tokenPtr );
 			totalSalary = totalSalary + salary;
 		}
+		
 		outFile << "The Total Salary = " << totalSalary;
 		
 		inFile.close();
 		outFile.close();
+		
+		
 		
 		return 0;
 		
