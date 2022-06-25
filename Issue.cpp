@@ -32,7 +32,7 @@ using namespace std;
 			
 			cout << "Can't Open input File Named " << inputFileName << '\n';
 			
-			exit ( 1 );
+			exit ( 1 );        // (0);
 	
 		}  
 		
